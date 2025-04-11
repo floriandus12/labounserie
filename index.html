@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>La Bounserie - Florian Dussel</title>
+  <title>La Bounserie - Accueil</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,73 +12,44 @@
       background-size: cover;
       color: #000;
     }
-
-    header {
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 4rem 1rem 2rem;
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    h1, p, nav {
       text-align: center;
     }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin: 0;
-    }
-
-    nav {
-      background-color: rgba(255, 255, 255, 0.95);
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      padding: 1rem;
-    }
-
     nav a {
-      background-color: #111;
-      color: white;
-      padding: 0.7rem 1.2rem;
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #000;
+      color: #fff;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
     }
-
     nav a:hover {
       background-color: #444;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: rgba(255, 255, 255, 0.9);
-      font-size: 0.9rem;
-      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
-
-  <header>
+  <div class="container">
     <h1>LA BOUNSERIE</h1>
-    <p>Intervention terrain – Florian Dussel</p>
-  </header>
-
-  <nav>
-    <a href="mailto:floriandussel12@gmail.com?subject=Demande%20-%20Réorganisation&body=Bonjour%20Florian%2C%0AJ’aurais%20besoin%20d’un%20accompagnement%20sur%20la%20réorganisation%20de%20mon%20établissement...">Réorganisation</a>
-    <a href="mailto:floriandussel12@gmail.com?subject=Demande%20-%20Management&body=Bonjour%20Florian%2C%0AJe%20souhaite%20échanger%20sur%20le%20management%20de%20mon%20équipe...">Management</a>
-    <a href="mailto:floriandussel12@gmail.com?subject=Demande%20-%20Ressources%20Humaines&body=Bonjour%20Florian%2C%0AJ’ai%20des%20questions%20concernant%20la%20gestion%20des%20ressources%20humaines...">Ressources humaines</a>
-    <a href="mailto:floriandussel12@gmail.com?subject=Demande%20-%20Aide%20à%20la%20prestation&body=Bonjour%20Florian%2C%0AJ’aurais%20besoin%20d’un%20coup%20de%20main%20sur%20la%20prestation...">Aide à la prestation</a>
-    <a href="mailto:floriandussel12@gmail.com?subject=Demande%20-%20Aide%20au%20service&body=Bonjour%20Florian%2C%0AJe%20souhaite%20parler%20d’une%20optimisation%20du%20service...">Aide au service</a>
-  </nav>
-
-  <footer>
-    &copy; 2025 La Bounserie | Florian Dussel
-  </footer>
-
+    <p>Intervention terrain pour restaurants, cafés et brasseries</p>
+    <p>Je suis Florian Dussel, et j'accompagne les établissements dans leurs urgences de terrain : réorganisation, management, RH, aide à la prestation et au service.</p>
+    <nav>
+      <a href="reorganisation.html">Réorganisation</a>
+      <a href="management.html">Management</a>
+      <a href="rh.html">Ressources humaines</a>
+      <a href="prestation.html">Aide à la prestation</a>
+      <a href="service.html">Aide au service</a>
+    </nav>
+  </div>
 </body>
 </html>

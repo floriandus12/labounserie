@@ -7,79 +7,77 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
       background: url('https://upload.wikimedia.org/wikipedia/commons/4/4d/Mountains_landscape_in_France.jpg') no-repeat center center fixed;
       background-size: cover;
-      margin: 0;
-      padding: 0;
       color: #000;
     }
 
-    .container {
-      background: rgba(255, 255, 255, 0.92);
-      max-width: 600px;
-      margin: 5rem auto;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-
-    h1, p {
+    header {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 4rem 1rem 2rem;
       text-align: center;
     }
 
-    form {
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.95);
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 1rem;
-      margin-top: 2rem;
+      padding: 1rem;
     }
 
-    input, textarea {
-      padding: 0.8rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    nav a {
+      background-color: #111;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
     }
 
-    button {
-      padding: 0.8rem;
-      background-color: #000;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #333;
+    nav a:hover {
+      background-color: #444;
     }
 
     footer {
       text-align: center;
-      margin-top: 2rem;
-      padding: 1rem;
+      padding: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.9);
       font-size: 0.9rem;
-      background: rgba(255,255,255,0.9);
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <header>
     <h1>LA BOUNSERIE</h1>
     <p>Intervention terrain – Florian Dussel</p>
+  </header>
 
-    <form action="https://formsubmit.co/floriandussel12@gmail.com" method="POST">
-      <input type="email" name="email" placeholder="Votre adresse e-mail" required>
-      <input type="text" name="subject" placeholder="Objet de votre demande" required>
-      <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-  </div>
+  <nav>
+    <a href="mailto:floriandussel12@gmail.com?subject=Demande%20-%20Réorganisation&body=Bonjour%20Florian%2C%0AJ’aurais%20besoin%20d’un%20accompagnement%20sur%20la%20réorganisation%20de%20mon%20établissement...">Réorganisation</a>
+    <a href="mailto:floriandussel12@gmail.com?subject=Demande%20-%20Management&body=Bonjour%20Florian%2C%0AJe%20souhaite%20échanger%20sur%20le%20management%20de%20mon%20équipe...">Management</a>
+    <a href="mailto:floriandussel12@gmail.com?subject=Demande%20-%20Ressources%20Humaines&body=Bonjour%20Florian%2C%0AJ’ai%20des%20questions%20concernant%20la%20gestion%20des%20ressources%20humaines...">Ressources humaines</a>
+    <a href="mailto:floriandussel12@gmail.com?subject=Demande%20-%20Aide%20à%20la%20prestation&body=Bonjour%20Florian%2C%0AJ’aurais%20besoin%20d’un%20coup%20de%20main%20sur%20la%20prestation...">Aide à la prestation</a>
+    <a href="mailto:floriandussel12@gmail.com?subject=Demande%20-%20Aide%20au%20service&body=Bonjour%20Florian%2C%0AJe%20souhaite%20parler%20d’une%20optimisation%20du%20service...">Aide au service</a>
+  </nav>
 
   <footer>
-    &copy; 2025 La Bounserie | Site réalisé par Florian Dussel
+    &copy; 2025 La Bounserie | Florian Dussel
   </footer>
 
 </body>
